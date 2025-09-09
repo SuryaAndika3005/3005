@@ -52,7 +52,7 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                <div id="certificateCarousel" class="carousel slide" data-bs-ride="carousel">
+              <div id="certificateCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <img src="assets/img/sertifikat/Sertifikat Illustrator.png" class="d-block w-100" alt="Sertifikat Marketing">
@@ -136,7 +136,7 @@
 <!-- Introduction Section -->
 <section id="intro" class="intro-section py-5">
   <div class="container">
-    <div class="row justify-content-center align-items-center bg-white shadow rounded-4 p-4">
+    <div class="row justify-content-center align-items-center bg-white shadow rounded-4 p-4 animated-on-scroll">
       <div class="col-md-4 text-center">
         <img src="assets/img/p2.JPG" alt="Photo" class="img-fluid rounded-3 mb-3" />
         <div class="d-flex justify-content-center gap-3">
@@ -164,7 +164,7 @@
 
 <!-- Skills Section -->
 <section id="skills" class="skills-section py-5">
-  <div class="container text-center">
+  <div class="container text-center animated-on-scroll">
     <h2 class="fw-bold mb-4">My Skills</h2>
     <p class="text-muted mb-5">Beberapa keahlian yang saya kuasai dalam bidang desain dan pengembangan.</p>
     <div class="row g-4 justify-content-center">
@@ -232,7 +232,7 @@
     <h2 class="fw-bold mb-3">Laporan Praktikum Pemrograman Web</h2>
     <p class="text-muted mb-5">Berikut adalah laporan dari praktikum mata kuliah Pemrograman Web.</p>
 
-    <div class="row g-4">
+    <div class="row g-4 animated-on-scroll">
       <div class="col-md-6 col-lg-4">
         <div class="card border-0 shadow-sm rounded-4">
           <img src="assets/img/Laporan1.png" class="card-img-top rounded-top-4" alt="Laporan 6">
@@ -488,6 +488,33 @@
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    // Animasi on-scroll
+    const observerOptions = {
+      root: null,
+      rootMargin: "0px",
+      threshold: 0.1
+    };
+
+    const observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("is-visible");
+          observer.unobserve(entry.target);
+        }
+      });
+    }, observerOptions);
+
+    document.querySelectorAll('.animated-on-scroll').forEach(element => {
+      observer.observe(element);
+    });
+
+    // Mengganti kelas untuk Hero Section agar animasi hanya berjalan sekali saat dimuat
+    document.querySelector('.hero-section .col-lg-6').classList.add('fade-in-up');
+    document.querySelector('.hero-section .profile').classList.add('fade-in-up');
+  });
+</script>
 
 </body>
 </html>

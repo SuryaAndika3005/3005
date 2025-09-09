@@ -1,3 +1,110 @@
+/* --- Animasi Masuk Halaman (On Load) --- */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 40px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.fade-in-up {
+  animation-name: fadeInUp;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+/* Penundaan untuk elemen yang berbeda */
+.hero-section .col-lg-6 {
+  animation-delay: 0.5s;
+}
+
+.hero-section .profile {
+  animation-delay: 0.8s;
+}
+
+/* --- Animasi Scroll (Elements on scroll) --- */
+.animated-on-scroll {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.animated-on-scroll.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* --- Perbaikan dan Penambahan Hover Effect --- */
+.skill-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-10px) scale(1.05); /* Efek melayang lebih terasa */
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2); /* Bayangan lebih dalam */
+}
+
+.skill-card:hover .fa-2x,
+.skill-card:hover h6 {
+  color: var(--primary); /* Ganti warna ikon dan teks */
+  transition: color 0.3s ease;
+}
+
+.portfolio-section .card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.portfolio-section .card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+.portfolio-section .card-img-top {
+  transition: transform 0.3s ease;
+}
+
+.portfolio-section .card:hover .card-img-top {
+  transform: scale(1.05); /* Gambar sedikit membesar */
+}
+
+.btn-primary, .btn-dark, .btn-outline-primary {
+  transition: all 0.3s ease;
+}
+
+/* Efek Hover untuk Tombol */
+.btn-primary:hover {
+    box-shadow: 0 5px 15px rgba(165, 61, 255, 0.4);
+    transform: translateY(-2px);
+}
+
+.btn-outline-primary:hover {
+    color: #fff;
+    background-color: var(--primary);
+    box-shadow: 0 5px 15px rgba(165, 61, 255, 0.4);
+    transform: translateY(-2px);
+}
+
+/* Efek Hover untuk Ikon Sosial Media */
+.intro-section .btn {
+  transition: all 0.3s ease;
+}
+
+.intro-section .btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.intro-section .btn i {
+  transition: color 0.3s ease;
+}
+
+.intro-section .btn:hover i {
+  color: var(--dark) !important;
+}
+
 :root {
   --primary: #A53DFF;
   --dark: #333333;
