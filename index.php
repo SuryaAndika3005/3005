@@ -36,22 +36,65 @@
       </ul>
 
       <div class="text-end">
-      <button type="button" data-bs-toggle="modal" data-bs-target="#myModal" class="btn btn-dark fw-semibold px-4">Certificate<i class="fas fa-download ms-2"></i>
-      </button>
-      <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="certificateModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-xl modal-dialog-centered">
-    <div class="modal-content">
-      <div class="modal-header">...</div>
-      <div class="modal-body">...</div>
-      <div class="modal-footer">...</div>
-    </div>
-  </div>
-</div>
-      
+        <button type="button" data-bs-toggle="modal" data-bs-target="#myModal" class="btn btn-dark fw-semibold px-4">
+            Certificate<i class="fas fa-download ms-2"></i>
+        </button>
       </div>
     </div>
   </div>
 </nav>
+
+<div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="certificateModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="certificateModalLabel">My Certificates</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div id="certificateCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="assets/img/sertifikat/Sertifikat Illustrator.png" class="d-block w-100" alt="Sertifikat Marketing">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/img/sertifikat/Sertifikat Photoshop.png" class="d-block w-100" alt="Sertifikat Lain 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/img/sertifikat/Sertifikat Logo.png" class="d-block w-100" alt="Sertifikat Lain 2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/img/sertifikat/Sertifikat Basic Motion.png" class="d-block w-100" alt="Sertifikat Lain 2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/img/sertifikat/Sertifikat DDC.png" class="d-block w-100" alt="Sertifikat Lain 2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/img/sertifikat/Sertifikat Pengurus 2023.png" class="d-block w-100" alt="Sertifikat Lain 2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/img/sertifikat/Sertifikat APAN 7.png" class="d-block w-100" alt="Sertifikat Lain 2">
+                        </div>                                               
+                        <div class="carousel-item">
+                            <img src="assets/img/sertifikat/Sertifikat APAN 8.png" class="d-block w-100" alt="Sertifikat Lain 2">
+                        </div>                                                                                                
+                        </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#certificateCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#certificateCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
 
 <!-- Hero Section -->
 <section id="home"class="hero-section d-flex align-items-center">
