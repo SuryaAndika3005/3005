@@ -306,7 +306,7 @@
 <section id="portfolio" class="portfolio-section py-5">
   <div class="container text-center">
     <h2 class="fw-bold mb-3">Laporan Praktikum Aplikasi Mobile</h2>
-    <p class="text-muted mb-5">Berikut adalah laporan dari praktikum mata kuliah Pemrograman Web.</p>
+    <p class="text-muted mb-5">Berikut adalah laporan dari praktikum mata kuliah Aplikasi Mobile.</p>
 
     <div class="row g-4">
       <div class="col-md-6 col-lg-4">
@@ -335,7 +335,7 @@
         <div class="card border-0 shadow-sm rounded-4">
           <img src="assets/img/cs.png" class="card-img-top rounded-top-4" alt="Laporan 8">
           <div class="card-body text-start">
-            <p class="text-primary fw-semibold small mb-1">Laporan Praktikum 8</p>
+            <p class="text-primary fw-semibold small mb-1">Laporan Praktikum 3</p>
             <h6 class="fw-bold">Judul Praktikum</h6>
             <p class="text-muted small">Deskripsi</p>
             <a href="" class="btn btn-outline-primary btn-sm mt-2">Lihat</a>
@@ -346,7 +346,7 @@
         <div class="card border-0 shadow-sm rounded-4">
           <img src="assets/img/cs.png" class="card-img-top rounded-top-4" alt="Laporan 9">
           <div class="card-body text-start">
-            <p class="text-primary fw-semibold small mb-1">Laporan Praktikum 9</p>
+            <p class="text-primary fw-semibold small mb-1">Laporan Praktikum 4</p>
             <h6 class="fw-bold">Judul Laporan</h6>
             <p class="text-muted small">Deskripsi</p>
             <a href="" class="btn btn-outline-primary btn-sm mt-2">Lihat</a>
@@ -357,7 +357,7 @@
         <div class="card border-0 shadow-sm rounded-4">
           <img src="assets/img/cs.png" class="card-img-top rounded-top-4" alt="Laporan 10">
           <div class="card-body text-start">
-            <p class="text-primary fw-semibold small mb-1">Laporan Praktikum 10</p>
+            <p class="text-primary fw-semibold small mb-1">Laporan Praktikum 5</p>
             <h6 class="fw-bold">Judul Laporan</h6>
             <p class="text-muted small">Deskripsi</p>
             <a href="" class="btn btn-outline-primary btn-sm mt-2">Lihat</a>
@@ -368,7 +368,7 @@
         <div class="card border-0 shadow-sm rounded-4">
           <img src="assets/img/cs.png" class="card-img-top rounded-top-4" alt="Laporan 10">
           <div class="card-body text-start">
-            <p class="text-primary fw-semibold small mb-1">Laporan Praktikum 11</p>
+            <p class="text-primary fw-semibold small mb-1">Laporan Praktikum 6</p>
             <h6 class="fw-bold">Judul Laporan</h6>
             <p class="text-muted small">Deskripsi</p>
             <a href="" class="btn btn-outline-primary btn-sm mt-2">Lihat</a>
@@ -510,7 +510,6 @@
       observer.observe(element);
     });
 
-    // Mengganti kelas untuk Hero Section agar animasi hanya berjalan sekali saat dimuat
     document.querySelector('.hero-section .col-lg-6').classList.add('fade-in-up');
     document.querySelector('.hero-section .profile').classList.add('fade-in-up');
   });
